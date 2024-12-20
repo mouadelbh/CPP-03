@@ -6,14 +6,14 @@
 #    By: mel-bouh <mel-bouh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/16 05:14:14 by mel-bouh          #+#    #+#              #
-#    Updated: 2024/12/20 06:07:05 by mel-bouh         ###   ########.fr        #
+#    Updated: 2024/12/20 06:34:23 by mel-bouh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 FLAGS = -Wall -Wextra -Werror
 SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
 OBJ = $(SRC:.cpp=.o)
-NAME = ClapTrap
+NAME = ScavTrap
 
 all: $(NAME)
 
