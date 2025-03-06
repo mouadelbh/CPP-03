@@ -6,7 +6,7 @@
 /*   By: mel-bouh <mel-bouh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 04:27:52 by mel-bouh          #+#    #+#             */
-/*   Updated: 2024/12/20 04:21:54 by mel-bouh         ###   ########.fr       */
+/*   Updated: 2025/03/06 16:03:41 by mel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,17 @@
 class ClapTrap
 {
 	protected:
-		int			Health;
-		int			Mana;
+		int			HitPoints;
+		int			EnergyPoints;
 		int			AttackDamage;
 		std::string	Name;
 	public:
 		ClapTrap();
 		ClapTrap(std::string name);
 		ClapTrap(ClapTrap& a);
+		ClapTrap&	operator=(ClapTrap& a);
 		~ClapTrap();
-		ClapTrap& operator=(ClapTrap& a);
-		void	attack(std::string const & target);
+		void	attack(const std::string& target);
 		void	takeDamage(unsigned int amount);
 		void	beRepaired(unsigned int amount);
 };

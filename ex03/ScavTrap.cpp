@@ -6,7 +6,7 @@
 /*   By: mel-bouh <mel-bouh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 05:49:26 by mel-bouh          #+#    #+#             */
-/*   Updated: 2025/03/06 16:06:44 by mel-bouh         ###   ########.fr       */
+/*   Updated: 2025/03/06 15:50:39 by mel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ void	ScavTrap::attack(const std::string& target)
 		return;
 	}
 	std::cout << "ScavTrap " << Name << " attack " << target << ", causing " << AttackDamage << " points of damage!" << std::endl;
-	EnergyPoints -= 1;
+	EnergyPoints -= 10;
 }
 
 void	ScavTrap::guardGate()
